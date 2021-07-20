@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras Geometricas | CUrso practico de javascript </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
 
@@ -15,17 +19,58 @@
 
     <main class="main" >
         <section class="main__section" >
+            <div class="square"></div>
             <h2 class="main__section--title">Calcula el area y perimetro de un cuadrado</h2>
             <form class="main__section--form" >
                 <label class="form__label" for="inputCuadrado">Escribe cuanto mide cada lado de tu cuadrado:</label>
     
                 <input class="form__input" id="inputCuadrado" type="number">
     
-                <button class="form__button1" type="button" onclick="calcularPerimetroCuadrado()" >Calcular el perímetro</button>
+                <div class="form__button-container">
+                    <button class="button" type="button" onclick="calcularPerimetroCuadrado()" >Calcular perímetro</button>
     
-                <button class="form__button2" type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
+                    <button class="button" type="button" onclick="calcularAreaCuadrado()">Calcular área</button>
+                </div>
             </form>
         </section>
+
+        <section class="main__section" >
+            <div class="triangle"></div>
+            <h2 class="main__section--title">Calcula el area y perimetro de un triangulo</h2>
+            <form class="main__section--form" >
+                <label class="form__label" for="inputTriangulol1">Escribe el valor de lado 1 del triangulo:</label>
+                <input class="form__input" id="inputTriangulol1" type="number">
+                <label class="form__label" for="inputTriangulol2">Escribe el valor de lado 2 del triangulo:</label>
+                <input class="form__input" id="inputTriangulol2" type="number">
+                <label class="form__label" for="inputTrianguloB">Escribe el valor de la base del triangulo:</label>
+                <input class="form__input" id="inputTrianguloB" type="number">
+                <label class="form__label" for="inputTrianguloA">Escribe el valor de la altura del triangulo:</label>
+                <input class="form__input" id="inputTrianguloA" type="number">
+                
+                <div class="form__button-container">
+                    <button class="button" type="button" onclick="calcularPerimetroTriangulo()" >Calcular perímetro</button>
+    
+                    <button class="button" type="button" onclick="calcularAreaTriangulo()">Calcular área</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="main__section" >
+            <div class="circle"></div>
+            <h2 class="main__section--title">Calcula el area y perimetro de un circulo</h2>
+            <form class="main__section--form" >
+                <label class="form__label" for="inputCirculo">Escribe el valor de lado 1 del triangulo:</label>
+                <input class="form__input" id="inputCirculo" type="number">
+    
+                
+                <div class="form__button-container">
+                    <button class="button" type="button" onclick="calcularPerimetroCirculo()" >Calcular perímetro</button>
+    
+                    <button class="button" type="button" onclick="calcularAreaCirculo()">Calcular área</button>
+                </div>
+            </form>
+        </section>
+
     </main>
 
     <script src="./figuras.js"> </script>
